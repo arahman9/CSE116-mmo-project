@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Grid Capture</title>
+    <script src="main.js"></script>
+</head>
+<body>
+<p id="1">Welcome to Pixel Grid Capture!</p>
+<p id="2">The goal of this game is simple: cover the grid! You click pixels as quickly as you can, working with your team,
+    composed of those of the same color family as you.</p>
+<p id="3">Your username is your hex code. If you already have one, simply enter it below and click "Existing Username." If not,
+    choose a color family and click "New Username" to
+    receive one and start playing.</p>
+<p id="6">Note: clicks are capped at one per 1/10 second</p>
+<p id="4"></p>
+<input type="text" id="hexcode" value=""><br>
+<button id="hexcodebutton" onclick="hexcodebutton()">Existing Username</button>
+<p id="errors"></p>
+<select id="colorfamily">
+    <option value="red">Red</option>
+    <option value="orange">Orange</option>
+    <option value="yellow">Yellow</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="purple">Purple</option>
+    <option value="monochrome">Monochrome</option>
+</select>
+<button id="5" onclick="colorfamily()">New Username</button>
+<p id="givecode"></p>
+<canvas width="1000" height="1000" id="canvas"></canvas>
+</body>
+</html>
